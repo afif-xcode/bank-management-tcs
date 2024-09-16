@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bank Management System</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Bank Management System</h1>
+
+        <!-- Registration and Login Forms -->
+
+        <div id="authSection">
+
+            <!-- Toggle between Registration and Login -->
+
+            <div class="toggle-buttons">
+
+                <button id="showRegistration">Register</button>
+
+                <button id="showLogin">Login</button>
+
+            </div>
+
+            <!-- Registration Form -->
+
+            <div id="registrationForm" class="form-container">
+
+                <h2>Customer Registration</h2>
+
+                <form id="registerForm">
+
+                    <label for="ssn">SSN:</label>
+
+                    <input type="text" id="ssn" name="ssn" required>
+
+                    <label for="firstName">First Name:</label>
+
+                    <input type="text" id="firstName" name="firstName" required>
+
+                    <label for="lastName">Last Name:</label>
+
+                    <input type="text" id="lastName" name="lastName" required>
+
+                    <label for="email">Email:</label>
+
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Password:</label>
+
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="confirmPassword">Confirm Password:</label>
+
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+                    <button type="submit">Register</button>
+
+                </form>
+
+                <div id="registrationMessage"></div>
+
+            </div>
+
+            <!-- Login Form -->
+
+            <div id="loginForm" class="form-container">
+
+                <h2>Customer Login</h2>
+
+                <form id="loginFormUI">
+
+                    <label for="emailLogin">Email:</label>
+
+                    <input type="email" id="emailLogin" name="emailLogin" required>
+
+                    <label for="passwordLogin">Password:</label>
+
+                    <input type="password" id="passwordLogin" name="passwordLogin" required>
+
+                    <button type="submit">Login</button>
+
+                </form>
+
+                <div id="loginMessage"></div>
+
+            </div>
+
+        </div>
+
+        <div>
+
+            <!-- Bank Account Creation Form -->
+
+            <div id="accountCreationSection" class="form-container">
+
+                <h2>Create Bank Account</h2>
+
+                <form id="accountForm">
+
+                    <label for="accountNumber">Account Number:</label>
+
+                    <input type="text" id="accountNumber" name="accountNumber" required>
+
+                    <label for="ifsc">IFSC Code:</label>
+
+                    <input type="text" id="ifsc" name="ifsc" required>
+
+                    <label for="balance">Initial Balance:</label>
+
+                    <input type="number" id="balance" name="balance" required>
+
+                    <label for="aadhaar">Aadhaar Card No:</label>
+
+                    <input type="text" id="aadhaar" name="aadhaar" required>
+
+                    <label for="pan">PAN Card No:</label>
+
+                    <input type="text" id="pan" name="pan" required>
+
+                    <label for="dob">Date of Birth:</label>
+
+                    <input type="date" id="dob" name="dob" required>
+
+                    <label for="gender">Gender:</label>
+
+                    <select id="gender" name="gender" required>
+
+                        <option value="male">Male</option>
+
+                        <option value="female">Female</option>
+
+                    </select>
+
+                    <label for="marital">Marital Status:</label>
+
+                    <select id="marital" name="marital" required>
+
+                        <option value="single">Single</option>
+
+                        <option value="married">Married</option>
+
+                    </select>
+
+                    <label for="email">Email:</label>
+
+                    <input type="email" id="emailAccount" name="emailAccount" required>
+
+                    <label for="address">Address:</label>
+
+                    <input type="text" id="address" name="address" required>
+
+                    <label for="contact">Contact Number:</label>
+
+                    <input type="text" id="contact" name="contact" required>
+
+                    <button type="submit">Create Account</button>
+                </form>
+                <div id="accountMessage"></div>
+
+
+
+                <!-- Transaction Section -->
+
+                <div id="transactionSection" class="form-container">
+                    <h2>Deposit/Withdraw Money</h2>
+                    <form id="transactionForm">
+                        <label for="transactionType">Transaction Type:</label>
+                        <select id="transactionType">
+                            <option value="deposit">Deposit</option>
+                            <option value="withdraw">Withdraw</option>
+                        </select>
+                        <label for="transactionAmount">Amount:</label>
+                        <input type="number" id="transactionAmount" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <div id="transactionMessage"></div>
+                </div>
+
+                <div id="balanceSection">
+                    <h2>Current Balance</h2>
+                    <p id="currentBalance"></p>
+                </div>
+
+                <button id="logoutButton">Logout</button>
+
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+/* Global Styles */
+
+body {
+  font-family: Arial, sans-serif;
+
+  background-color: #f4f4f4;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  height: 100vh;
+
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+
+  padding: 50px;
+
+  border-radius: 8px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  width: 400px;
+}
+
+/* Headings */
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+
+label {
+  display: block;
+
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+
+  padding: 8px;
+
+  margin-bottom: 10px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 4px;
+}
+
+.toggle-buttons {
+  display: flex;
+  padding: 10px;
+  gap: 20px;
+}
+
+button {
+  width: 100%;
+
+  padding: 10px;
+
+  background-color: #28a745;
+
+  border: none;
+
+  color: white;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.form-container {
+  display: none;
+}
+
+#accountCreationSection {
+  padding: 50px;
+  height: 100% !important;
+  background-color: white !important;
+  margin-top: 50vh;
+}
+
+#logoutButton {
+  display: block;
+
+  background-color: #e74c3c;
+
+  color: white;
+
+  border-radius: 4px;
+}
+
+#logoutButton:hover {
+  background-color: #c0392b;
+}
+
+#balanceSection {
+  display: none;
+}
+
+#registrationMessage,
+#loginMessage,
+#accountMessage,
+#transactionMessage {
+  margin-top: 15px;
+
+  color: green;
+
+  text-align: center;
+}
