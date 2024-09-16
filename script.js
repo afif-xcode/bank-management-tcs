@@ -60,6 +60,10 @@ document
         email: document.getElementById("email").value,
 
         password: password,
+
+        address: document.getElementById("address").value,
+
+        contactNumber: document.getElementById("contact-number").value,
       };
 
       localStorage.setItem("user", JSON.stringify(userData));
